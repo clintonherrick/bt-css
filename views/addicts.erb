@@ -1,0 +1,9 @@
+<h1>Chipotle Addicts</h1>
+<div>
+  <ul>
+    <% @addicts.each() do |addict| %>
+    <li><a href="/addicts/<%= addict.id() %>"><%= addict.name() %></a></li>
+    <% end %>
+  </ul>
+  <a href="/">Home</a>
+</div>
