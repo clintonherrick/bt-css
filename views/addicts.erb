@@ -2,8 +2,7 @@
 <div>
   <ul>
     <% @addicts.each() do |addict| %>
-    <li><a href="/addicts/<%= addict.id() %>"><%= addict.name() %></a></li>
+    <ul><a href="/addicts/<%= addict.id() %>"><%= addict.name() %></a></ul>
     <% end %>
   </ul>
-  <a href="/">Home</a>
 </div>
